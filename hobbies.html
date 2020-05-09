@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="commonBody">
+    <h1 class="heading">Hobbies</h1>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">About me</a>
+        <a href="academic.html">Academic Profile</a>
+        <a href="professional.html">Professional Achievements</a>
+        <a href="hobbies.html" class="active">Hobbies</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+
+    <div class="polaroid">
+        <img src="images/excercise.jpg" style="width:100%">
+        <div class="container">
+            <p>Excercising</p>
+        </div>
+    </div>
+    <div class="polaroid">
+        <img src="images/guitar.jpg" style="width:100%">
+        <div class="container">
+            <p>Playing my guitar</p>
+        </div>
+    </div>
+    <div class="polaroid">
+        <img src="images/cooking.jpg" style="width:100%">
+        <div class="container">
+            <p>Cooking</p>
+        </div>
+    </div>
+    <div class="polaroid">
+        <img src="images/driving.jpg" style="width:100%">
+        <div class="container">
+            <p>And most of all driving!</p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+</body>

@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="commonBody">
+    <h1 class="heading">About Me</h1>
+
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">About Me</a>
+        <a href="academic.html">Academic Profile</a>
+        <a href="professional.html">Professional Achievements</a>
+        <a href="hobbies.html">Hobbies</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+    </div>
+    <div class="aboutInfo">
+        <p>Hi, I am Milind! <br />
+        I am a software engineer who has worked on backend technologies and am now exploring the frontend.
+        Explore more about me by clicking on the tabs in the menu bar above.
+        <br />Click the button below to view my LinkedIn profile!</p>
+    </div>
+    <img class="image1" src="images/milind.jpg">
+    <section class="LinkedInbutton">
+        <button onclick="window.location.href = 'https://www.linkedin.com/in/milind-shyam-1b802b118/';" class="button1">LinkedIn</button>
+    </section>
+   
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+</body>
